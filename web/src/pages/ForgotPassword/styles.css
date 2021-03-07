@@ -1,0 +1,124 @@
+#page-forgot {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-forgot .content {
+    width: 100%;
+    height: 100vh;
+    background: var(--color-primary-darker);
+
+    display: flex;
+}
+
+#page-forgot .content .box {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-forgot .content #content-form {
+    background: var(--color-background);
+    animation: animation .5s;
+}
+
+#page-forgot .content .box .content-form {
+    width: 41.6rem;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+#page-forgot .content .box .content-form a {
+    width: 4.3rem;
+    height: 41rem;
+    outline: none;
+
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+#page-forgot .content .box .content-form form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#page-forgot .content .box .content-form form h2 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: var(--color-text-title);
+}
+
+#page-forgot .content .box .content-form form p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: var(--color-text-base);
+    margin-top: 2.7rem;
+    margin-bottom: 3.3rem;
+}
+
+#page-forgot .content .box .content-form form button {
+    width: 100%;
+    height: 5.8rem;
+    background: var(--color-secundary);
+    border: none;
+    border-radius: 0.8rem;
+    font-family: 'Archivo';
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-box-base);
+    cursor: pointer;
+    outline: none;
+    margin-top: 4.1rem;
+}
+
+#page-forgot .content #content-logo {
+    background: url('../../assets/images/login.svg') no-repeat center center;
+}
+
+/* mobile */
+@media(max-width: 800px) {
+    #page-forgot .content {
+        flex-direction: column;
+    }
+
+    #page-forgot .content #content-logo {
+        height: 16.6rem;
+        order: 1;
+        padding: 2.5rem 0;
+    }
+
+    #page-forgot .content #content-logo img {
+        width: 15.6rem;
+    }
+
+    #page-forgot .content #content-form {
+        order: 2;
+    }
+
+    #page-forgot .content #content-form .content-form {
+        width: 90vw;
+    }
+
+    #page-forgot .content #content-form .content-form a {
+        width: 4.1rem;
+    }
+
+    #page-forgot .content #content-form .content-form h2 {
+        font-size: 2.5rem;
+    }
+
+    #page-forgot .content #content-form .content-form p {
+        font-size: 1.6rem;
+    }
+}

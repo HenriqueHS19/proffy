@@ -1,0 +1,60 @@
+#success-page {
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-primary-darker);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#success-page .content {
+    width: 1200px;
+    height: 100vh;
+    background: url('../../assets/images/success-background.svg') no-repeat center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#success-page .content img {
+    width: 120px;
+    margin-bottom: 40px;
+}
+
+#success-page .content h2 {
+    font-family: 'Archivo';
+    font-weight: bold;
+    font-size: 54px;
+    color: var(--color-box-base);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#success-page .content p {
+    max-width: 350px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: var(--color-text-in-primary);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#success-page .content a {
+    width: 200px;
+    height: 56px;
+    background: var(--color-secundary);
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-box-base);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

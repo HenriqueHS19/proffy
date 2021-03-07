@@ -1,0 +1,196 @@
+#page-teacher-list {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-teacher-list #header-container {
+    height: 33.3rem;
+}
+
+#page-teacher-list .content {
+    flex: 1;
+    width: 76.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-teacher-list .content .message {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-teacher-list .content .message h2 {
+    font-family: 'Archivo';
+    font-size: 3.7rem;
+    font-weight: 600;
+    line-height: 4.3rem;
+    color: var(--color-title-in-primary);
+}
+#page-teacher-list .content .message h2.title-mobile {
+    display: none;
+}
+
+#page-teacher-list .content .message p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--color-text-in-primary);
+
+    display: flex;
+    align-items: center;
+}
+#page-teacher-list .content .message p.quant-mobile {
+    display: none;
+}
+
+#page-teacher-list .content .message p img {
+    width: 3.3rem;
+    margin-right: 1.6rem;
+}
+
+#page-teacher-list .content .filter-button {
+    display: none;
+}
+
+#page-teacher-list .content form {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 22rem) 1fr;
+    grid-gap: 1.6rem;
+    align-items: flex-end;
+    margin-bottom: -2.5rem;
+}
+
+#page-teacher-list .content form .select-block label, .input-block label {
+    color: var(--color-text-in-primary);
+}
+
+#page-teacher-list .content form .select-block + .select-block {
+    margin-top: 0;
+}
+
+#page-teacher-list .content form button {
+    width: 5.8rem;
+    height: 5.8rem;
+    background: var(--color-secundary);
+    border: none;
+    border-radius: 0.8rem;
+    outline: none;
+    cursor: pointer;
+}
+
+#page-teacher-list main {
+    width: 100%;
+    padding-bottom: 7.5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+#page-teacher-list main .box {
+    width: 76.6rem;
+    margin-top: 7.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* mobile */
+@media(max-width: 800px) {
+    #page-teacher-list #header-container {
+        height: auto;
+    }
+
+    #page-teacher-list .content {
+        width: 90vw;
+        padding: 4.3rem 0;
+        justify-content: center;
+    }
+
+    #page-teacher-list .content .message {
+        flex: 0;
+    }
+
+    #page-teacher-list .content .message h2 {
+        display: none;
+    }
+    #page-teacher-list .content .message h2.title-mobile {
+        display: block;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #page-teacher-list .content .message p {
+        display: none;
+    }
+    #page-teacher-list .content .message p.quant-mobile {
+        display: flex;
+        font-size: 1.2rem;
+    }
+    #page-teacher-list .content .message p.quant-mobile img {
+        width: 1.8rem;
+        margin-right: 1.2rem;
+    }
+
+    #page-teacher-list .content .filter-button {
+        width: 90vw;
+        height: 4.1rem;
+        border-bottom: 0.1rem solid var(--color-primary-lighter);
+        margin-top: 3.3rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #page-teacher-list .content .filter-button p {
+        font-family: 'Archivo';
+        font-size: 1.6rem;
+        color: var(--color-text-in-primary);
+    }
+
+    #page-teacher-list .content .filter-button p + img {
+        width: 2.5rem;
+    }
+
+    #page-teacher-list .content form {
+        width: 100%;
+
+        display: none;
+        grid-template-columns: 16rem 10rem 1fr;
+        grid-template-areas: "subject subject subject"
+                             "week-day hour button";
+        margin-top: 1.6rem;
+        margin-bottom: 0;
+    }
+    #page-teacher-list .content form.view-form-mobile {
+        display: grid;
+    }
+
+    #page-teacher-list .content form .select-block {
+        grid-area: subject;
+    }
+    #page-teacher-list .content form .select-block + .select-block {
+        grid-area: week-day;
+    }
+
+    #page-teacher-list .content form .input-block {
+        grid-area: hour;
+    }
+
+    #page-teacher-list .content form button {
+        grid-area: button;
+    }
+
+    #page-teacher-list main .box {
+        width: 90vw;
+        margin-top: -2rem;
+    }
+}

@@ -1,0 +1,205 @@
+#login-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+#login-page .content {
+    width: 100%;
+    height: 100vh;
+    background: var(--color-primary-darker);
+
+    display: flex;
+    position: relative;
+}
+
+#login-page .content .box {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-page .content #content-logo {
+    background: url('../../assets/images/login.svg') no-repeat center center;
+}
+
+#login-page .content #content-form {
+    background: var(--color-background);
+    position: relative;
+    animation: animationLogin .5s;
+}
+
+#login-page .content #content-form form {
+    width: 41.6rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#login-page .content #content-form form h2 {
+    font-size: 3.7rem;
+    color: var(--color-text-title);
+    margin-bottom: 4.1rem;
+}
+
+#login-page .content #content-form form input.top {
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+#login-page .content #content-form form input.bottom {
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 0.8rem;
+}
+
+span.view-password {
+    height: 7.2rem;
+    background: var(--color-input-background);
+    border-right: 1px solid var(--color-line-in-white);
+    border-bottom: 1px solid var(--color-line-in-white);
+    border-radius: 0 0 0.8rem 0;
+    padding: 0 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.view-password img {
+    width: 2.5rem;
+    border-radius: 0 0 0.8rem 0;
+    cursor: pointer;
+}
+
+#login-page .content #content-form form .options {
+    width: 100%;
+    margin-top: 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-page .content #content-form form .options .remember {
+    display: flex;
+    align-items: center;
+}
+
+#login-page .content #content-form form .options .remember span {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--color-box-footer);
+    border: 0.1rem solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-page .content #content-form form .options .remember span.check {
+    background: var(--color-secundary-dark);
+    border: none;
+}
+
+#login-page .content #content-form form .options .remember span img {
+    visibility: hidden;
+}
+#login-page .content #content-form form .options .remember span img.visible {
+    visibility: visible;
+}
+
+#login-page .content #content-form form .options .remember p {
+    font-size: 1.4rem;
+    color: var(--color-text-complement);
+    margin-left: 1.6rem;
+}
+
+#login-page .content #content-form form .options a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--color-text-complement);
+}
+
+#login-page .content #content-form form button {
+    width: 100%;
+    height: 5.8rem;
+    border: none;
+    background: var(--color-secundary);
+    border-radius: 0.8rem;
+    font-family: 'Archivo';
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-box-base);
+    margin-top: 4.1rem;
+}
+
+#login-page .content #content-form .footer {
+    width: 41.6rem;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+
+    position: absolute;
+    bottom: 5.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#login-page .content #content-form .footer .register {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-page .content #content-form .footer .register a {
+    color: var(--color-primary);
+}
+
+#login-page .content #content-form .footer p {
+    display: flex;
+    align-items: center;
+}
+
+#login-page .content #content-form .footer p img {
+    margin-left: 0.8rem;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+    #login-page .content {
+        flex-direction: column;
+    }
+
+    #login-page .content .box {
+        flex: 0;
+    }
+
+    #login-page .content #content-logo {
+        height: 16.6rem;
+        padding: 2.5rem 0;
+    }
+
+    #login-page .content #content-logo img {
+        width: 15.6rem;
+    }
+
+    #login-page .content #content-form {
+        flex: 1;
+    }
+
+    #login-page .content #content-form form {
+        width: 90vw;
+    }
+
+    #login-page .content #content-form form h2 {
+        font-size: 3rem;
+    }
+
+    #login-page .content #content-form .footer {
+        width: 90vw;
+        bottom: 0.5rem;
+        font-size: 1.4rem;
+    }
+}

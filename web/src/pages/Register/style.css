@@ -1,0 +1,161 @@
+#page-register {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-register .content {
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-primary-darker);
+
+    display: flex;
+}
+
+#page-register .content .box {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-register .content #content-form {
+    background: var(--color-background);
+    animation: animation .3s;
+}
+
+#page-register .content .box .content-form {
+    width: 41.6rem;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+#page-register .content .box .content-form a {
+    width: 4.3rem;
+    height: 4.1rem;
+    outline: none;
+
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+#page-register .content .box .content-form form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#page-register .content .box .content-form form h2 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: var(--color-text-title);
+}
+
+#page-register .content .box .content-form form p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: var(--color-text-base);
+    margin-top: 2.7rem;
+}
+
+#page-register .content .box .content-form form .input-group {
+    margin-top: 4.1rem;
+}
+
+#page-register .content .box .content-form form input.top {
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+#page-register .content .box .content-form form input.center {
+    border-top: none;
+    border-radius: 0;
+}
+
+#page-register .content .box .content-form form input.bottom {
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 0.8rem;
+}
+
+span.view-password {
+    height: 7.2rem;
+    background: var(--color-input-background);
+    border-right: 0.1rem solid var(--color-line-in-white);
+    border-bottom: 0.1rem solid var(--color-line-in-white);
+    border-radius: 0 0 0.8rem 0;
+    padding: 0 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.view-password img {
+    width: 2.5rem;
+    border-radius: 0 0 0.8rem 0;
+    cursor: pointer;
+}
+
+#page-register .content .box .content-form form button {
+    width: 100%;
+    height: 5.8rem;
+    background: var(--color-secundary);
+    border: none;
+    border-radius: 0.8rem;
+    font-family: 'Archivo';
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-box-base);
+    cursor: pointer;
+    margin-top: 4.1rem;
+}
+
+#page-register .content #content-logo {
+    background: url('../../assets/images/login.svg') no-repeat center center;
+}
+
+/* mobile */
+@media(max-width: 800px) {
+    #page-register .content {
+        flex-direction: column;
+    }
+
+    #page-register .content #content-logo {
+        height: 16.6rem;
+        padding: 2.5rem 0;
+        order: 1;
+    }
+
+    #page-register .content #content-logo img {
+        width: 15.6rem;
+    }
+
+    #page-register .content #content-form {
+        flex: 1;
+        order: 2;
+    }
+
+    #page-register .content #content-form .content-form {
+        width: 90vw;
+    }
+
+    #page-register .content #content-form .content-form a {
+        top: 0.5rem;
+    }
+
+    #page-register .content #content-form .content-form h2 {
+        font-size: 2.5rem;
+    }
+
+    #page-register .content #content-form .content-form p {
+        font-size: 1.6rem;
+    }
+}
